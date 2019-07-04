@@ -7,13 +7,18 @@
     "email": "x0s3.prog@gmail.com"
   },
   "repository": {
-    "url": ""
+    "url": "https://github.com/x0s3/fullChuck"
   },
   "workspaces": [
     "packages/*"
   ],
   "devDependencies": {
     "lerna": "^3.15.0",
+    "tslint": "^5.18.0",
+    "tslint-config-airbnb": "^5.11.1",
+    "tslint-config-prettier": "^1.18.0",
+    "tslint-react": "^4.0.0",
+    "tslint-react-hooks": "^2.1.1",
     "typescript": "^3.5.2"
   }
 }

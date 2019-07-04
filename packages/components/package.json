@@ -1,0 +1,30 @@
+{
+  "name": "components",
+  "version": "0.0.0",
+  "description": "> TODO: description",
+  "author": "x0s3 <x0s3.prog@gmail.com>",
+  "homepage": "https://github.com/x0s3/fullChuck#readme",
+  "license": "ISC",
+  "main": "lib/components.js",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/x0s3/fullChuck.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "bugs": {
+    "url": "https://github.com/x0s3/fullChuck/issues"
+  },
+  "devDependencies": {
+    "@types/react": "^16.8.23",
+    "@types/react-native": "^0.57.65"
+  }
+}
