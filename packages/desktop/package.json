@@ -1,0 +1,31 @@
+{
+  "name": "desktop",
+  "version": "0.1.0-alpha.0",
+  "private": false,
+  "description": "FullChuck mac, windows & linux app",
+  "author": "x0s3 <x0s3.prog@gmail.com>",
+  "homepage": "https://github.com/x0s3/fullChuck#readme",
+  "license": "ISC",
+  "main": "lib/desktop.js",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/x0s3/fullChuck.git"
+  },
+  "scripts": {
+    "start": "electron ./src/index.js"
+  },
+  "bugs": {
+    "url": "https://github.com/x0s3/fullChuck/issues"
+  },
+  "devDependencies": {
+    "electron": "^5.0.6",
+    "electron-is-dev": "^1.1.0"
+  }
+}

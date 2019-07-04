@@ -14,7 +14,8 @@
   ],
   "scripts": {
     "start:mobile": "lerna run start --scope mobile --stream",
-    "start:web": "lerna run start --scope web --stream"
+    "start:web": "lerna run start --scope web --stream",
+    "start:desktop": "lerna run start --scope desktop --stream"
   },
   "devDependencies": {
     "lerna": "^3.15.0",
