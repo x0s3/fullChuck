@@ -1,34 +1,40 @@
 {
   "name": "components",
   "version": "0.2.0-alpha.0",
-  "description": "> TODO: description",
+  "description": "Main components for all platforms",
   "author": "x0s3 <x0s3.prog@gmail.com>",
-  "homepage": "https://github.com/x0s3/fullChuck#readme",
   "license": "ISC",
-  "main": "lib/components.js",
+  "main": "src/index.tsx",
   "directories": {
-    "lib": "lib",
+    "src": "src",
     "test": "__tests__"
   },
-  "files": [
-    "lib"
-  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/x0s3/fullChuck.git"
   },
   "scripts": {
-    "test": "echo \"Error: run tests from root\" && exit 1"
+    "test": "jest"
   },
   "bugs": {
     "url": "https://github.com/x0s3/fullChuck/issues"
   },
+  "dependencies": {
+    "core": "0.0.1-alpha.0",
+    "immer": "^3.1.3",
+    "react-native-paper": "^2.16.0",
+    "react-native-vector-icons": "^6.6.0",
+    "react-redux": "^7.1.0",
+    "redux": "^4.0.1",
+    "redux-logger": "^3.0.6",
+    "redux-observable": "^1.1.0",
+    "reselect": "^4.0.0",
+    "rxjs": "^6.5.2",
+    "typesafe-actions": "^4.4.2"
+  },
   "devDependencies": {
     "@types/react": "^16.8.23",
-    "@types/react-native": "^0.57.65"
-  },
-  "dependencies": {
-    "react-native-paper": "^2.16.0",
-    "react-native-vector-icons": "^6.6.0"
+    "@types/react-native": "^0.57.65",
+    "@types/react-redux": "^7.1.1"
   }
 }

@@ -1,4 +1,5 @@
 const path = require('path');
+const webpack = require('webpack');
 const TerserPlugin = require('terser-webpack-plugin');
 
 module.exports = {
@@ -57,6 +58,12 @@ module.exports = {
     },
     extensions: ['.mjs', '.web.js', '.js', '.ts', '.tsx', '.web.tsx']
   },
+
+  plugins: [
+    new webpack.DefinePlugin({
+      __DEV__: process.env.NODE_ENV !== 'production'
+    })
+  ],
 
   // Development server config
   devServer: {

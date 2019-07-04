@@ -5,10 +5,13 @@
     "tslint-react",
     "tslint-config-airbnb",
     "tslint-config-prettier",
-    "tslint-react-hooks"
+    "tslint-react-hooks",
+    "rxjs-tslint-rules"
   ],
   "jsRules": {},
   "rules": {
+    "rxjs-ban-observables": true,
+    "rxjs-ban-operators": true,
     "curly": false,
     "function-name": false,
     "import-name": false,

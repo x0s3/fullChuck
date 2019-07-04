@@ -4,17 +4,16 @@
   "private": false,
   "description": "core package",
   "author": "x0s3 <x0s3.prog@gmail.com>",
-  "homepage": "",
   "license": "ISC",
-  "main": "lib/core.js",
+  "main": "src/index.ts",
   "directories": {
-    "lib": "lib",
+    "src": "src",
     "test": "__tests__"
   },
   "files": [
-    "lib"
+    "src"
   ],
   "scripts": {
-    "test": "echo \"Error: run tests from root\" && exit 1"
+    "test": "jest"
   }
 }
