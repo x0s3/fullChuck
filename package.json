@@ -13,6 +13,7 @@
     "packages/*"
   ],
   "scripts": {
+    "push": "lerna version",
     "start:mobile": "lerna run start --scope mobile --stream",
     "start:web": "lerna run start --scope web --stream",
     "start:desktop": "lerna run start --scope desktop --stream",
