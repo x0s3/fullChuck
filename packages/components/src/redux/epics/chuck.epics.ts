@@ -5,7 +5,7 @@ import { catchError, filter, map, switchMap, takeUntil } from 'rxjs/operators';
 import { isActionOf } from 'typesafe-actions';
 import { actions } from './../actions/chuck.actions';
 
-const fetchApi: Epic = (action$, store, { getJSON, baseURL }) =>
+const fetchApi: Epic = (action$, store$, { getJSON, baseURL }) =>
   action$.pipe(
     filter(isActionOf(actions.fetchAsyncApi.request)),
     switchMap(action =>
@@ -24,4 +24,4 @@ const fetchApi: Epic = (action$, store, { getJSON, baseURL }) =>
     )
   );
 
-export default [fetchApi] as const;
+export default { fetchApi } as const;

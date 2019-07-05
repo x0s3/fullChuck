@@ -12,7 +12,13 @@ export const chuckReducer = createReducer<IChuckInitialState, RootAction>({
   isFetching: false,
   joke: {},
   jokes: []
-}).handleAction(actions.fetchAsyncApi.success, (state, action) => ({
-  ...state,
-  joke: { ...action.payload }
-}));
+})
+  .handleAction(actions.fetchAsyncApi.success, (state, action) => ({
+    ...state,
+    isFetching: !state.isFetching,
+    joke: { ...action.payload }
+  }))
+  .handleAction(actions.fetchAsyncApi.request, (state, _) => ({
+    ...state,
+    isFetching: true
+  }));
