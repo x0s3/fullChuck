@@ -1,6 +1,6 @@
 {
   "name": "mobile",
-  "version": "0.3.1-alpha.0",
+  "version": "0.3.2-alpha.0",
   "private": false,
   "scripts": {
     "start": "react-native start",
@@ -8,7 +8,7 @@
     "lint": "eslint ."
   },
   "dependencies": {
-    "components": "^0.3.1-alpha.0",
+    "components": "^0.3.2-alpha.0",
     "react": "16.8.6",
     "react-native": "0.60.0"
   },
