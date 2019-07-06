@@ -1,7 +1,7 @@
 import React from 'react';
 import Enzyme, { shallow, mount } from 'enzyme';
 import Adapter from 'enzyme-adapter-react-16';
-import ErrorBoundary from '../../src/components/ErrorBoundary';
+import ErrorBoundary from '../../src/components/components/layout/ErrorBoundary';
 
 Enzyme.configure({ adapter: new Adapter() });
 

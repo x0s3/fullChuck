@@ -1,11 +1,14 @@
 import React from 'react';
-import { StyleProp, View } from 'react-native';
+import { Share, StyleProp, View } from 'react-native';
+import { useSelector } from 'react-redux';
 import { useSpring } from 'react-spring';
-import { SpringAnimatedIcon } from '../animated/spring/SpringAnimatedIcon';
+import { getJoke } from '../../../redux/selectors';
 import { SpringAnimatedImage } from '../animated/spring/SpringAnimatedImage';
-import { CustomIcon } from '../common/Icon';
+import { SpringAnimatedIcon } from '../animated/spring/SpringAnimatedTouchable';
 
 export const BottomBar = React.memo(() => {
+  const { value: jokeText } = useSelector(getJoke);
+
   const fadeInProps: StyleProp<any> = useSpring({
     opacity: 1,
     from: { opacity: 0 },
@@ -22,9 +25,9 @@ export const BottomBar = React.memo(() => {
   return (
     <View style={{ flexDirection: 'row', justifyContent: 'space-around' }}>
       <SpringAnimatedIcon
+        callback={() => alert('open modal options')}
         style={fadeInProps}
-        onPress={() => alert('open options')}
-        children={<CustomIcon name={'format-list-bulleted'} />}
+        name={'format-list-bulleted'}
       />
       <SpringAnimatedImage
         style={[fadeTopProps, { height: 303 / 3, width: 295 / 3 }]}
@@ -33,9 +36,15 @@ export const BottomBar = React.memo(() => {
         }}
       />
       <SpringAnimatedIcon
+        callback={() =>
+          Share.share({
+            message: jokeText,
+            title: 'FullChuck',
+            url: 'https://github.com/x0s3/fullChuck'
+          })
+        }
         style={fadeInProps}
-        onPress={() => alert('open options')}
-        children={<CustomIcon name={'share'} />}
+        name={'share'}
       />
     </View>
   );
