@@ -1,17 +1,19 @@
 import React from 'react';
-import { Platform } from 'react-native';
+import { Platform, StatusBar } from 'react-native';
 import { Provider as PaperProvider } from 'react-native-paper';
 import { Provider as ReduxProvider } from 'react-redux';
-import { ChuckJokes } from './components';
+import { MainView } from './components';
 import ErrorBoundary from './components/ErrorBoundary';
 import { configureStore } from './redux/store';
+import { mainColors, mainTheme } from './utils/theme';
 
 const store = configureStore();
 
 export const App = () => (
   <ErrorBoundary>
+    <StatusBar backgroundColor={mainColors.blue} translucent />
     <ReduxProvider store={store}>
-      <PaperProvider>
+      <PaperProvider theme={mainTheme}>
         {Platform.OS === 'web' ? (
           <style type='text/css'>{`
         @font-face {
@@ -20,7 +22,7 @@ export const App = () => (
         }
       `}</style>
         ) : null}
-        <ChuckJokes />
+        <MainView />
       </PaperProvider>
     </ReduxProvider>
   </ErrorBoundary>

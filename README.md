@@ -105,6 +105,7 @@ After having the commit well commented for deploying the changes to the repo jus
 - [ ] Automatic deploy to github pages with control tests with husky
 - [ ] Add Husky
 - [ ] Show how to handle git push with git tags with lerna version
+- [ ] ¿Show how to add SSR for web?
 - [ ] ¿Show how to use this repo with a backend like nestjs?
 
 # License

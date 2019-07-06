@@ -1,6 +1,7 @@
 import React, { Component, ErrorInfo } from 'react';
-import { Image, View } from 'react-native';
+import { Image, StyleSheet, View } from 'react-native';
 import { Title } from 'react-native-paper';
+import { mainColors } from '../utils/theme';
 
 interface IProps {}
 
@@ -25,9 +26,10 @@ class ErrorBoundary extends Component<IProps, IState> {
   render() {
     if (this.state.hasError) {
       return (
-        <View style={{ alignItems: 'center' }}>
+        <View style={style.errorView}>
           <Title>Oops seems like something went wrong...</Title>
           <Image
+            style={style.image}
             source={{
               uri: `https://files.sharenator.com/chuck_100_Chuck_Norris_Facts-s390x300-11888-420.jpg`
             }}
@@ -41,3 +43,12 @@ class ErrorBoundary extends Component<IProps, IState> {
 }
 
 export default ErrorBoundary;
+
+const style = StyleSheet.create({
+  errorView: {
+    flex: 1,
+    alignItems: 'center',
+    backgroundColor: mainColors.blue
+  },
+  image: { width: 300, height: 300 }
+});

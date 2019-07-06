@@ -1,30 +1,26 @@
-import React, { useCallback, useEffect } from 'react';
-import { SafeAreaView } from 'react-native';
-import { Button, Text } from 'react-native-paper';
-import { useDispatch, useSelector } from 'react-redux';
-import { actions } from '../redux/actions/chuck.actions';
-import { getJoke, isFetching } from '../redux/selectors';
+import React from 'react';
+import { SafeAreaView, StyleSheet } from 'react-native';
+import { Title } from 'react-native-paper';
+import { mainColors } from '../utils/theme';
+import { BottomBar } from './components/layout/BottomBar';
+import { Joke } from './components/layout/Joke';
 
-export function ChuckJokes() {
-  const joke = useSelector(getJoke);
-  const isFetch = useSelector(isFetching);
-  const dispatch = useDispatch();
-  const fetchJoke = useCallback(
-    () => dispatch(actions.fetchAsyncApi.request()),
-    [dispatch]
-  );
+export const MainView = () => (
+  <SafeAreaView style={styles.rootView}>
+    <Title children={'CHUCK FACTS'} style={styles.title} />
+    <Joke />
+    <BottomBar />
+  </SafeAreaView>
+);
 
-  useEffect(() => {
-    fetchJoke();
-  }, []);
-
-  return (
-    <SafeAreaView style={{ alignItems: 'center' }}>
-      <Text>
-        Is fetching: {isFetch ? 'Im fetching a joke' : 'No no fetching a joke'}
-      </Text>
-      <Text>Joke: {joke.value}</Text>
-      <Button onPress={fetchJoke}>FETCH ANOTHER JOKE</Button>
-    </SafeAreaView>
-  );
-}
+const styles = StyleSheet.create({
+  rootView: {
+    flex: 1,
+    backgroundColor: mainColors.blue
+  },
+  title: {
+    fontSize: 90,
+    alignSelf: 'center',
+    textDecorationLine: 'underline'
+  }
+});
