@@ -1,7 +1,7 @@
 import React, { Component, ErrorInfo } from 'react';
 import { Image, StyleSheet, View } from 'react-native';
 import { Title } from 'react-native-paper';
-import { mainColors } from '../utils/theme';
+import { mainColors } from '../../../utils/theme';
 
 interface IProps {}
 
@@ -27,7 +27,9 @@ class ErrorBoundary extends Component<IProps, IState> {
     if (this.state.hasError) {
       return (
         <View style={style.errorView}>
-          <Title>Oops seems like something went wrong...</Title>
+          <Title style={{ color: '#FFF' }}>
+            Oops seems like something went wrong...
+          </Title>
           <Image
             style={style.image}
             source={{

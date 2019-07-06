@@ -3,7 +3,7 @@ import { Platform, StatusBar } from 'react-native';
 import { Provider as PaperProvider } from 'react-native-paper';
 import { Provider as ReduxProvider } from 'react-redux';
 import { MainView } from './components';
-import ErrorBoundary from './components/ErrorBoundary';
+import ErrorBoundary from './components/components/layout/ErrorBoundary';
 import { configureStore } from './redux/store';
 import { mainColors, mainTheme } from './utils/theme';
 

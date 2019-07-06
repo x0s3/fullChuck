@@ -5,7 +5,9 @@
   "scripts": {
     "start": "react-native start",
     "test": "jest",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "run:android": "react-native run-android",
+    "run:ios": "react-native run-ios"
   },
   "dependencies": {
     "components": "^0.3.3-alpha.0",

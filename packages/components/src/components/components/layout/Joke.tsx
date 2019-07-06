@@ -17,13 +17,13 @@ export const Joke = React.memo(() => {
   useEffect(() => {
     fetchJoke();
   }, []);
-  
+
   return (
-    <View style={{ alignItems: 'center' }}>
-      <Text>
+    <View style={{ alignItems: 'center', margin: 15 }}>
+      {/* <Text>
         Is fetching: {isFetch ? 'Im fetching a joke' : 'Im not fetching a joke'}
-      </Text>
-      <Title style={{ fontSize: 24 }}>Joke: {joke.value}</Title>
+      </Text> */}
+      <Title style={{ fontSize: 24 }}>{joke.value}</Title>
       <Button onPress={fetchJoke}>FETCH ANOTHER JOKE</Button>
     </View>
   );

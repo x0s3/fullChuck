@@ -14,6 +14,8 @@
   ],
   "scripts": {
     "push": "lerna version",
+    "run:android": "lerna run run:android --scope mobile --stream",
+    "run:ios": "lerna run run:ios --scope mobile --stream",
     "start:mobile": "lerna run start --scope mobile --stream",
     "start:web": "lerna run start --scope web --stream",
     "start:desktop": "lerna run start --scope desktop --stream",

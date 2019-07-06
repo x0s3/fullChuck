@@ -16,10 +16,12 @@ export const MainView = () => (
 const styles = StyleSheet.create({
   rootView: {
     flex: 1,
-    backgroundColor: mainColors.blue
+    backgroundColor: mainColors.blue,
+    justifyContent: 'space-around'
   },
   title: {
-    fontSize: 90,
+    paddingTop: 25,
+    fontSize: 50,
     alignSelf: 'center',
     textDecorationLine: 'underline'
   }
