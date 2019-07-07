@@ -17,6 +17,7 @@
 		2D02E4BF1E0B4AB3006451C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		2DCD954D1E0B4F2C00145EB5 /* fullchuckTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* fullchuckTests.m */; };
 		6B062E8D242B1E26BAE7549A /* libPods-fullchuck-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A90F9D36E1C70EF2C6B01F0F /* libPods-fullchuck-tvOSTests.a */; };
+		8D855B7F22D2185B0087E414 /* MaterialIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8D855B7E22D2185B0087E414 /* MaterialIcons.ttf */; };
 		A16A1CF7E2237931D2D9D0A3 /* libPods-fullchuckTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E3D69B5BAD6363EA90B511CA /* libPods-fullchuckTests.a */; };
 		D65CB4C630B374CBCA9CF579 /* libPods-fullchuck.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E3BD3EEA151D9E895A9AC3EF /* libPods-fullchuck.a */; };
 		E7D76B5C75A35E518BE2AF23 /* libPods-fullchuck-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A7E18770A9CF4A90B152C8D7 /* libPods-fullchuck-tvOS.a */; };
@@ -58,6 +59,7 @@
 		3EA6AB63BDD038E466762598 /* Pods-fullchuckTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fullchuckTests.release.xcconfig"; path = "Target Support Files/Pods-fullchuckTests/Pods-fullchuckTests.release.xcconfig"; sourceTree = "<group>"; };
 		5962B22C74CDE09F1310FED2 /* Pods-fullchuck-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fullchuck-tvOSTests.debug.xcconfig"; path = "Target Support Files/Pods-fullchuck-tvOSTests/Pods-fullchuck-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
 		830D58468F5B8248E636FE19 /* Pods-fullchuckTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fullchuckTests.debug.xcconfig"; path = "Target Support Files/Pods-fullchuckTests/Pods-fullchuckTests.debug.xcconfig"; sourceTree = "<group>"; };
+		8D855B7E22D2185B0087E414 /* MaterialIcons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = MaterialIcons.ttf; path = "../../../../node_modules/react-native-vector-icons/Fonts/MaterialIcons.ttf"; sourceTree = "<group>"; };
 		96C3A6F9996431FF6CF2B570 /* Pods-fullchuck-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fullchuck-tvOS.debug.xcconfig"; path = "Target Support Files/Pods-fullchuck-tvOS/Pods-fullchuck-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
 		A7E18770A9CF4A90B152C8D7 /* libPods-fullchuck-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-fullchuck-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A90F9D36E1C70EF2C6B01F0F /* libPods-fullchuck-tvOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-fullchuck-tvOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -174,6 +176,7 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
+				8D855B3C22D215B60087E414 /* Fonts */,
 				13B07FAE1A68108700A75B9A /* fullchuck */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				00E356EF1AD99517003FC87E /* fullchuckTests */,
@@ -195,6 +198,14 @@
 				2D02E4901E0B4A5D006451C7 /* fullchuck-tvOSTests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		8D855B3C22D215B60087E414 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				8D855B7E22D2185B0087E414 /* MaterialIcons.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -337,6 +348,7 @@
 			files = (
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */,
+				8D855B7F22D2185B0087E414 /* MaterialIcons.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
