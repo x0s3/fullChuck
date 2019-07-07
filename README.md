@@ -5,13 +5,18 @@ Full-Chuck is a monorepo created with Lerna, TypesScript and React-Native-Web, m
 # ScreenShots
 
 ## Mobile
-<img src="assets/chuck_face_1.png" alt="Mobile 1" width="200"/>
-<img src="assets/chuck_face_2.png" alt="Mobile 2" width="200"/>
+
+<div style={"display: inline-block"}>
+    <img src="assets/chuck_face_1.png" alt="Mobile 1" width="200"/>
+    <img src="assets/chuck_face_2.png" alt="Mobile 2" width="200"/>
+</div>
 
 ## Desktop
+
 <img src="assets/chuck_face_3.png" alt="Desktop" width="800"/>
 
 ## Web
+
 <img src="assets/chuck_face_4.png" alt="Web" width="800"/>
 
 ### Proposals
@@ -19,7 +24,7 @@ Full-Chuck is a monorepo created with Lerna, TypesScript and React-Native-Web, m
 - Show how to handle multi packages with a tool like lerna and not die trying 🤖
 - Show how to type safe your redux and hooks components ⛑️
 - Show how to make a good approach for mvps with monorepos and TS 📦 🔝
-- Try to improve and learn how to use animations on all platforms with the best performance of    each one 🚀
+- Try to improve and learn how to use animations on all platforms with the best performance of each one 🚀
 - Summer nights are too hot and need to do something while i get try to fall asleep 😅
 
 # Commands
