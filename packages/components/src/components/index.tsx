@@ -7,7 +7,7 @@ import { Joke } from './components/layout/Joke';
 
 export const MainView = () => (
   <SafeAreaView style={styles.rootView}>
-    <Title children={'CHUCK FACTS'} style={styles.title} />
+    <Title children={'CHUCK FACTS'} style={[styles.title, { fontSize: 50 }]} />
     <Joke />
     <BottomBar />
   </SafeAreaView>
@@ -21,7 +21,6 @@ const styles = StyleSheet.create({
   },
   title: {
     paddingTop: 25,
-    fontSize: 50,
     alignSelf: 'center',
     textDecorationLine: 'underline'
   }

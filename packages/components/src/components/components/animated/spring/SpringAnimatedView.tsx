@@ -6,3 +6,5 @@ export const SpringAnimatedView = createSpringAnimatedComponent(View);
 (SpringAnimatedView as any).displayName = 'SpringAnimatedView';
 
 export interface SpringAnimatedViewProps extends ViewProps {}
+
+export type SpringAnimatedView = typeof SpringAnimatedView;

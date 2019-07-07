@@ -1,5 +1,5 @@
 import React, { useCallback, useEffect } from 'react';
-import { View } from 'react-native';
+import { StyleSheet, View } from 'react-native';
 import { Title } from 'react-native-paper';
 import { useDispatch, useSelector } from 'react-redux';
 import { actions } from '../../../redux/actions/chuck.actions';
@@ -18,8 +18,18 @@ export const Joke = React.memo(() => {
   }, []);
 
   return (
-    <View style={{ alignItems: 'center', margin: 15 }}>
-      <Title style={{ fontSize: 24 }}>{joke.value}</Title>
+    <View style={styles.view}>
+      <Title style={styles.text} children={joke.value} />
     </View>
   );
+});
+
+const styles = StyleSheet.create({
+  view: {
+    alignItems: 'center',
+    margin: 15
+  },
+  text: {
+    fontSize: 24
+  }
 });

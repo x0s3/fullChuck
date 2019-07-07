@@ -1,4 +1,4 @@
-import React, { useCallback } from 'react';
+import React, { useCallback, useRef } from 'react';
 import { Share, StyleProp, View } from 'react-native';
 import { useDispatch, useSelector } from 'react-redux';
 import { useSpring } from 'react-spring';
@@ -7,8 +7,10 @@ import { getJoke } from '../../../redux/selectors';
 import { DraggableItem } from '../animated/DragableItem';
 import { SpringAnimatedIcon } from '../animated/spring/SpringAnimatedIcon';
 import { SpringAnimatedImage } from '../animated/spring/SpringAnimatedImage';
+import OptionsModal from '../modals/Options';
 
 export const BottomBar = React.memo(() => {
+  const modalRef = useRef(null);
   const { value: jokeText } = useSelector(getJoke);
   const dispatch = useDispatch();
   const fetchJoke = useCallback(
@@ -32,7 +34,7 @@ export const BottomBar = React.memo(() => {
   return (
     <View style={{ flexDirection: 'row', justifyContent: 'space-around' }}>
       <SpringAnimatedIcon
-        callback={() => alert('open modal options')}
+        callback={() => modalRef.current.openModal()}
         style={fadeInProps}
         name={'format-list-bulleted'}
       />
@@ -55,6 +57,7 @@ export const BottomBar = React.memo(() => {
         style={fadeInProps}
         name={'share'}
       />
+      <OptionsModal ref={modalRef} />
     </View>
   );
 });
