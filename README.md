@@ -4,9 +4,14 @@ Full-Chuck is a monorepo created with Lerna, TypesScript and React-Native-Web, m
 
 # ScreenShots
 
+## Mobile
 <img src="assets/chuck_face_1.png" alt="Mobile 1" width="200"/>
 <img src="assets/chuck_face_2.png" alt="Mobile 2" width="200"/>
+
+## Desktop
 <img src="assets/chuck_face_3.png" alt="Desktop" width="800"/>
+
+## Web
 <img src="assets/chuck_face_4.png" alt="Web" width="800"/>
 
 ### Proposals
