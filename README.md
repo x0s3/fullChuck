@@ -115,7 +115,7 @@ After having the commit well commented for deploying the changes to the repo jus
 - [ ] Show how to handle git push with git tags with lerna version
 - [ ] ¿Show how to add SSR for web?
 - [ ] ¿Show how to use this repo with a backend like nestjs?
-- [] ¿¿Add some wasm module with Go?? 🙀
+- [ ] ¿¿Add some wasm module with Go?? 🙀
 
 # License
 
